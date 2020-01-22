@@ -12,7 +12,7 @@ const Name = props => {
   return (
     <ProfileContext.Consumer>
       {context => {
-        const { name, handleUpdateProfile } = context;
+        const { dispatch } = context;
         return (
           <div className="holder">
             <span>Name:</span>
@@ -24,7 +24,7 @@ const Name = props => {
             />
             <button
               type="button"
-              onClick={() => handleUpdateProfile({ name: userName })}
+              onClick={() => dispatch({ type: "name", payload: userName })}
             >
               Update Name
             </button>

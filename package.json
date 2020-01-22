@@ -1,8 +1,12 @@
 {
-  "name": "react",
+  "name": "react-usecontext-hook",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Simple demonstration of useContext Hook",
+  "keywords": [
+    "react",
+    "usecontext",
+    "hooks"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.12.0",

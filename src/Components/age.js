@@ -11,7 +11,7 @@ const Age = () => {
   return (
     <ProfileContext.Consumer>
       {context => {
-        const { age, handleUpdateProfile } = context;
+        const { dispatch } = context;
         return (
           <div className="holder">
             <span>Age: </span>
@@ -23,7 +23,7 @@ const Age = () => {
             />
             <button
               type="button"
-              onClick={() => handleUpdateProfile({ age: userAge })}
+              onClick={() => dispatch({ type: "age", payload: userAge })}
             >
               Update Age{" "}
             </button>

@@ -13,6 +13,7 @@ export default function App() {
           <Name />
           <br />
           <Age />
+          <br />
           <GlobalProfile />
         </ProfileContextProvider>
       </div>
